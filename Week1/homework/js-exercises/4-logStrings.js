@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 let myString = "Saoud Salem Ba-khmais";
 console.log("The value of 'myString' is Saoud Salem Ba-khmais");
 console.log(myString);

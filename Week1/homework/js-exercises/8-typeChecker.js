@@ -1,18 +1,18 @@
-'use strict'
+"use strict";
 function dataTypeCheck(dataType1, dataType2){
 
-    if (typeof dataType1 == typeof dataType2){
-        console.log("SAME TYPE");
+    if (typeof dataType1 === typeof dataType2){
+        console.log('SAME TYPE');
     }
     else{
-        console.log("NOT SAME TYPE");
+        console.log('NOT SAME TYPE');
     }
 }
 
-let myFavouriteMovie = "Shrek";
-let myFavouriteTvShow = "Friends";
-let myPersonal = {name:"Saoud", age: 26, weight:"70kg"};
-let myFavouriteCar = {name:"dodge charger", color: "black"};
+const myFavouriteMovie = 'Shrek';
+const myFavouriteTvShow = 'Friends';
+const myPersonal = {name:'Saoud', age: 26, weight:'70kg'};
+const myFavouriteCar = {name:'dodge charger', color: 'black'};
 
 console.log(typeof myFavouriteMovie);
 console.log(typeof myPersonal);
