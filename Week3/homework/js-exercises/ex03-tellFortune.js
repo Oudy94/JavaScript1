@@ -12,10 +12,10 @@ function tellFortune(fortuneChild, forunePartner, fortuneLocation, fortuneJob){
         return `Your inputs for must be an array`;
 
     //Select random Fortune from arrays list
-    const ranFortuneChild = fortuneChild[Math.floor(Math.random() * fortuneChild.length)];
-    const ranForunePartner = forunePartner[Math.floor(Math.random() * forunePartner.length)];
-    const ranFortuneLocation = fortuneLocation[Math.floor(Math.random() * fortuneLocation.length)];
-    const ranFortuneJob = fortuneJob[Math.floor(Math.random() * fortuneJob.length)];
+    const ranFortuneChild = randomFortune(fortuneChild);
+    const ranForunePartner = randomFortune(forunePartner);
+    const ranFortuneLocation = randomFortune(fortuneLocation);
+    const ranFortuneJob = randomFortune(fortuneJob);
 
     // Check if the first letter of 'ranFortuneJob' is vowel
     const vowelLetters = ["a", "e", "i", "o", "u", "y"];
@@ -26,6 +26,9 @@ function tellFortune(fortuneChild, forunePartner, fortuneLocation, fortuneJob){
 
 }
 
+function randomFortune(fortune){
+    return fortune[Math.floor(Math.random() * fortune.length)];
+}
 
 console.log(tellFortune(numChildren, partnerNames, locations, jobs)); 
 console.log(tellFortune(numChildren, partnerNames, locations, jobs)); 
